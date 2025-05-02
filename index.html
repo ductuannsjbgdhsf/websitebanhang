@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DucTuann Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+  <meta name="description" content="DucTuann Shop - Cửa hàng VIP với sản phẩm độc đáo, giao diện hiện đại, giá siêu tốt.">
+  <style>
+    body {
+      background-image: url('https://img.upanh.tv/2025/05/02/tuan.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background-color: #121212;
+      color: #fff;
+    }
+
+    header {
+      background-color: #ff69b4;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #121212;
+      font-size: 2.5rem;
+    }
+
+    .container {
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .product-card {
+      background-color: #1e1e1e;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .product-card h2 {
+      color: #ffb6c1;
+      margin: 15px 0 10px;
+    }
+
+    .product-card p {
+      font-size: 1rem;
+      color: #ccc;
+      margin: 5px 0;
+    }
+
+    .btn {
+      background-color: #ff69b4;
+      color: #121212;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #ff85c1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1e1e1e;
+      color: #888;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>DucTuann Shop</h1>
+  </header>
+
+  <div class="container">
+    <div class="product-card">
+      <img src="https://img.upanh.tv/2025/05/02/iphone15pro.jpg" alt="iPhone 15 Pro" loading="lazy">
+      <h2>iPhone 15 Pro</h2>
+      <p>Giá: 150.000₫</p>
+      <p>MUA ĐƯỢC TẶNG BÍ KÍP SCAM </p>
+      <button class="btn" onclick="hienTaiKhoan('iPhone 15 Pro')">Mua ngay</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://img.upanh.tv/2025/05/02/ROLLSROYCE.jpg" alt="Rolls-Royce" loading="lazy">
+      <h2>Rolls-Royce</h2>
+      <p>Giá: 999.000₫</p>
+      <p>XE ĐẸP,MUA ĐƯỢC TẶNG KÈM BÍ KÍP LÙA GÀ </p>
+      <button class="btn" onclick="hienTaiKhoan('Rolls-Royce')">Mua ngay</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://img.upanh.tv/2025/05/02/image426bfd40c67f0e72.png" alt="NGƯỜI YÊUYÊU" loading="lazy">
+      <h2>NGƯỜI YÊU </h2>
+      <p>Giá: 250.000₫</p>
+      <p>XINH,NGON </p>
+      <button class="btn" onclick="hienTaiKhoan('NGƯỜI YÊUYÊU')">Mua ngay</button>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 DucTuann Shop - All rights reserved.
+  </footer>
+
+  <script>
+    function hienTaiKhoan(tenSanPham) {
+      alert(
+        `🛒 Cảm ơn bạn đã chọn mua "${tenSanPham}"!\n\n📌 Vui lòng chuyển khoản theo thông tin sau:\n\nSố tài khoản: 123456789\nChủ tài khoản: DucTuannDzz\nNgân hàng: MB Bank\nNội dung chuyển khoản: ${tenSanPham.toUpperCase()} - SĐT của bạn\n\n📞 Liên hệ: 0901 234 567 khi cần hỗ trợ.\n\nChúc bạn mua sắm vui vẻ!`
+      );
+    }
+  </script>
+</body>
+</html>
